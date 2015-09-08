@@ -1,12 +1,16 @@
 ## List of errors I ran into
 $ touch HelloWorld.md
+
 $ ls
 HelloWorld.md
+
 $ git add -A
+
 $ git commit -m "I created a text file for the project"
 [master (root-commit) 8fe89ed] I created a text file for the project
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 HelloWorld.md
+
 
 $ git push
 warning: push.default is unset; its implicit value has changed in
@@ -35,7 +39,9 @@ To push the current branch and set the remote as upstream, use
 
     git push --set-upstream origin master
 
+
 $ git config --global push.default matching
+
 $ git push
 Username for 'https://github.com':
 Password for 'https://odlin@github.com':
@@ -48,8 +54,11 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
+
 $ rm HelloWorld.md
+
 $ ls
+
 $ git pull
 warning: no common commits
 remote: Counting objects: 6, done.
